@@ -20,13 +20,6 @@ header h1 {
     color: gray;
 }
 
-.nav_links {
-    float: left;
-    text-align: right;
-    background-color: skyblue;
-    color: gray;
-}
-
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -112,4 +105,10 @@ main {
     border-left: 2px solid red;
     height: 100px;
     width: 1px;
+}
+
+section li {
+    display: inline-block;
+    margin-left: 25px;
+    text-align: center;
 }
