@@ -107,8 +107,18 @@ main {
     width: 1px;
 }
 
+section ul {
+    margin: 300px 0 50px 0;
+    text-align: center;
+}
+
 section li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 8px;
+    text-align: center;
+}
+
+footer {
+    margin: 20px 0 10px 0;
     text-align: center;
 }
