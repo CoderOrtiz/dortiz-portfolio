@@ -42,7 +42,7 @@ nav a {
 nav a:hover {
   color: #3EDBF0;
   transition: .4s;
-  }
+}
 
 /* centers "welcome to my portfolio" */
 main {
@@ -88,8 +88,7 @@ aside {
  
 #work_text {
     margin: 150px -10px 0 0;
-    float: left;
-     
+    float: left;   
  }
  
 #work_hr { 
@@ -123,7 +122,6 @@ p {
     padding-left: 150px;
     text-align: center;
     line-height: 125%;
-    /* margin-right: 5px; */
     width: 775px;
 }
 
