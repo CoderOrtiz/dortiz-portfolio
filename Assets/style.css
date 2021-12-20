@@ -1,3 +1,4 @@
+/* universal selector */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,16 +6,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-table {
-    border: thick double #32a1ce;
-    margin: 0 auto 0 auto;
-    /* padding: 15px; */
-    }
-
-
-
-
-
+/* styling and positioning of header */
 header {
   display: flex;
   justify-content: space-between;
@@ -25,80 +17,63 @@ header {
   padding-left: 150px;
 }
 
+/* font size for h1 header */
 header h1 {
-    font-size: 200%;
+  font-size: 200%;
 }
 
-nav a {
-    color: #b9c6ae;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-
-aside {
-    /* padding-bottom: 357px; */
-    /* margin-bottom: 0; */
-    margin: 0 auto 0 auto;
-   
-
-}
-
-nav a:hover {
-    color: #fff;
-  }
-
+/* styling for the headers unordered list */
 header ul {
-    display: flex;
+  display: flex;
   justify-content: space-between;
   min-width: 300px;
   list-style: none;
 }
 
-main {
-    text-align: center;
+/* styling for nav link text */
+nav a {
+  color: #F5FDB0;
+  font-weight: bold;
+  text-decoration: none;
+  padding-right: 10px;
 }
 
+/* color for selecting nav button*/
+nav a:hover {
+  color: #3EDBF0;
+  transition: .4s;
+  }
+
+/* centers "welcome to my portfolio" */
+main {
+   text-align: center;
+}
+
+/* styling for profile picture */
 main img {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     border-radius: 100%;
     margin: 2% 0 2% 0;
 }
 
+/* gave h2 padding to the left */
 main h2 {
-padding-left: 150px;
+    padding-left: 150px;
 }
 
-.titles {
+/* styling for aside*/
+aside {
     margin-right: 20px;
     padding-left: 20px;
-    clear: both;
     float: left;
     width: 140px;
     height: 100%;
 }
 
-#refactor {
-    margin-top: 50px;
-    
-}
-
-#refactor:hover {
-    transform: scale(1.1);
-    transition: .5s;
-    border: solid 1px black;
-}
-
-table img:hover {
-    transform: scale(1.1);
-    transition: .5s;
-    border: solid 1px black;
-}
-
+/* stying for aside text and hr's */
 #about_me_text {
-   float: left;
-    
+    float: left;
 }
 
 #about_me_hr{ 
@@ -109,16 +84,14 @@ table img:hover {
     border-left:2px solid red;
     height: 155px;
     width: 1px;
-}
-
+ }
+ 
 #work_text {
     margin: 150px -10px 0 0;
     float: left;
-    
-}
-
-
-
+     
+ }
+ 
 #work_hr { 
     position: relative;
     float: right;
@@ -126,15 +99,14 @@ table img:hover {
     border-left: 2px solid red;
     margin-top: 155px;
     height: 537px;
-    width: 1px;
-    
-}
-
+    width: 1px; 
+ }
+ 
 #contact_me_text {
     margin: 95px 0 0 10px;
     float: left;
-}
-
+ }
+ 
 #contact_me_hr { 
     position: relative;
     float: right;
@@ -143,8 +115,45 @@ table img:hover {
     border-left: 2px solid red;
     height: 52px;
     width: 1px;
+ }
+
+/* styling for p tags */
+p {
+    margin: 0 auto 0 auto;
+    padding-left: 150px;
+    text-align: center;
+    line-height: 125%;
+    /* margin-right: 5px; */
+    width: 775px;
 }
 
+/* top margin for large picture */
+#refactor {
+    margin-top: 50px; 
+}
+
+/* styling for refactor picture */
+#refactor:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+/* styling and positioning for the table with imgs */
+table {
+    border: thick double #32a1ce;
+    margin: 0 auto 0 auto;
+}
+
+/* styling for the table */
+table img:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    border: solid 1px black;
+}
+
+/* positioning for section over the contact me buttons */
 section {
     text-align: center;
 }
@@ -160,6 +169,7 @@ section li {
     text-align: center;
 }
 
+/* styling and positioning for buttons */
 .buttons {
     background-color: #13293d;
     color: white;
@@ -171,54 +181,37 @@ section li {
     padding: 10px;
     box-shadow: 2px 3px #888888;
     border-radius: 8%;
-  }
-
-
+}
 
 .buttons:hover{
     transform: scale(1.1);
     transition: .5s;
- }
-
-p {
-    margin: 0 auto 0 auto;
-    padding-left: 150px;
-    text-align: center;
-    line-height: 125%;
-    /* margin-right: 5px; */
-    width: 775px;
+    color: white;
 }
 
+/* styling and positioning for the footer */
 footer {
-    
-    
     margin: 20px 0 0 0;
     padding: 20px 0 20px 150px;
     background-color: #13293d;
     color: white;
 }
 
-
+/* positioning for the page from 768px-578px */
 @media screen and (max-width: 768px) {
+main img {
+    margin-left: 135px;
+    } 
 
-    main img {
-        margin-left: 135px;
-    }    
-    .section_1 {
-        display: flex;
-        flex-wrap: wrap;    
+.section_1 {
+    display: flex;
+    flex-wrap: wrap;    
     }  
 
 p {
     padding-left: 0px;
-}
-
-
-
-#about_me_hr {
-        padding: 0 0 160px 0;
-        
     }
+
 #work_text {
         margin-top: 225px;   
         
@@ -227,45 +220,43 @@ p {
 #work_hr {
     /* margin-top: 225px; */
     margin: 220px 0 0px 0;
-    height: 405px;
-    
-}
+    height: 335px;   
+    }
 
 #contact_me_hr {
     margin: -50px 0 0px 0;
-}
+    }
 
-#refactor {
+section img {
     max-width: 50%;
     height: auto;
-    margin-top: 120px;
-      }
+    }
 
 table {
     max-width: 50%;
-  height: auto;
-}
+    height: auto;
+    }
 
 table img {
     max-width: 100%;
-  height: auto;
-}
-
+    height: auto;
+    }
 
 header {
-      flex-direction: column;
+    flex-direction: column;
     }
 }
-@media screen and (max-width: 578px) {
 
-    main img {
+/* positioning for the page from 578px-500px */
+@media screen and (max-width: 578px) {
+main img {
         margin-right: 180px;
     }  
 
 #about_me_hr {
         padding: 0 0 240px 0;
     }
-    
+
 #work_text {
         margin-top: 350px;   
     }
@@ -273,40 +264,33 @@ header {
 #work_hr {
     margin-top: 335px;
     height: 310px;
-}
+    }
 
 #refactor {
     margin-top: 150px;
+    }
 }
 
-
-}
-  
+/* positioning for the page for 500px and under */
 @media screen and (max-width: 500px) {
-    main img {
-        margin-right: 275px;
+main img {
+    margin-right: 275px;
     }  
-
 #about_me_hr {
     padding: 300px 0 0 0;
     }
 #work_text {
-        margin-top: 300px;  
-         
+    margin-top: 300px;      
     }
-
 #work_hr {
     margin: 300px 0 0px 0;
     height: 275px;
-}
-
+    }
 #refactor {
     margin-top: 60px;
-}
-
+    }
 #contact_me_hr {
     margin: 0px 0 px 0;
     height: 103px;
-}
-
+    }
 }
